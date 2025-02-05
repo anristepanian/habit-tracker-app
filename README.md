@@ -1,4 +1,4 @@
-# My Habit Tracker App / Project
+# habit-tracker-app
 
 Creating good habits and breaking bad ones is no easy task. To keep track of certain habits or achieving personal goals, more and more people rely on so-called habit trackers to help them throughout the day.<br>
 The Habit Tracker application helps users build and maintain habits, track progress, and stay motivated.<br>
