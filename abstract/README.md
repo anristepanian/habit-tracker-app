@@ -14,7 +14,9 @@ At the start, the *DbHabit* class had next variables: name, description, startin
 The concept was next, the **user** is able to create a certain habit, for example, a habit called “run”, and after completing or breaking the habit, **user** is able to create another habit called “run”, and data extraction would have not been a problem since the habit would have had a status “Still in progress”, and other habits called “run”, either “Completed” or “Broken”. But such a concept would have been hard to implement because the system does not interact with global time, but calculates the time when the **user** checks-off a habit, entering check-off date. So was decided to stick with the concept: only one habit with the same name is allowed, despite its status.<br>
 After creating the method store in the *DbHabit* class, which calls add habit in the *DB* class, which in turn inserts habit data into the dataset, it was needed to create a check-off method. The *add_habit_check* method in the *DbHabit* class not only checks-off a habit by inserting the data into the dataset but also checks all days or weeks, the **user** has forgotten to check-off a habit. At this point, it was decided to add boolean variables *days* and *weeks* needed for reducing the code lines in the *missed_dates()*.<br>
 After the habits and the *DB* classes were finished, I started to implement the *Test* class for the unit tests and the *Analysis* class for the analysis methods. It was also logical to add the *PredefinedHabits* class, consisting of certain methods, which create habits with at least 4 weeks of check-off history.<br>
-It was left only to write the *main.py*. When the **user** wants to check-off a habit the system extracts essential data from the database and passes it to the method *add_habit_check* of the *DbHabit* class.
+It was left only to write the *main.py*. When the **user** wants to check-off a habit the system extracts essential data from the database and passes it to the method *add_habit_check* of the *DbHabit* class.<br>
+For better understanding here is the class diagram: <br>
+![](../diagrams/Class_diagram.png)
 
 # Evaluation of result
 
