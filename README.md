@@ -55,7 +55,7 @@ pip install -r requirements.txt
 Start
 
 ```commandline
-python main.py
+python code/main.py
 ```
 
 and follow the instructions on the screen.
