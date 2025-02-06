@@ -1,0 +1,12 @@
+# Byte-compiled files
+
+__pycache__
+code/__pycache__
+
+# Unit test reports
+
+.pytest_cache
+
+# PyCharm
+
+.idea
