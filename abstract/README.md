@@ -15,7 +15,7 @@ The concept was next, the **user** is able to create a certain habit, for exampl
 After creating the method store in the *DbHabit* class, which calls add habit in the *DB* class, which in turn inserts habit data into the dataset, it was needed to create a check-off method. The *add_habit_check* method in the *DbHabit* class not only checks-off a habit by inserting the data into the dataset but also checks all days or weeks, the **user** has forgotten to check-off a habit. At this point, it was decided to add boolean variables *days* and *weeks* needed for reducing the code lines in the *missed_dates()*.<br>
 After the habits and the *DB* classes were finished, I started to implement the *Test* class for the unit tests and the *Analysis* class for the analysis methods. It was also logical to add the *PredefinedHabits* class, consisting of certain methods, which create habits with at least 4 weeks of check-off history.<br>
 It was left only to write the *main.py*. When the **user** wants to check-off a habit the system extracts essential data from the database and passes it to the method *add_habit_check* of the *DbHabit* class.<br>
-For better understanding here is the class diagram: <br>
+For better understanding here is the class diagram: <br><br>
 ![](../diagrams/Class_diagram.png)
 
 # Evaluation of result
@@ -25,5 +25,5 @@ However, despite all the disadvantages, the **Habit Tracker** application works 
 
 # Conclusion and outlook
 
-The **Habit Tracker** application allows users to define habits with different periodicities, check-off them, delete them, and analyze them.<br>
+The **Habit Tracker** application allows users to define habits with different periodicities, check-off them, delete them, and analyze them.<br>The use case diagram demonstrates it well: <br><br> ![](../diagrams/Use_case_diagram.png)
 Currently, the application is executed through the command line by writing the command: `Python code/main.py`. Therefore, to run the application, *Python* should be installed. The Habit Tracker also lacks an interactive GUI. The plan for the future is to develop the **_.exe_**, **_.apk_**, and **_.ipa_** extensions for *Windows*, *Android*, and *iPhone* users, respectively.<br>
